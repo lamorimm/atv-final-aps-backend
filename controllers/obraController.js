@@ -1,3 +1,4 @@
+//controllers/obraController.js
 const Obra = require('../models/Obra.js');
 
 // Criar uma nova obra
@@ -55,3 +56,5 @@ exports.deletarObra = async (req, res) => {
     res.status(500).json({ erro: err.message });
   }
 };
+
+

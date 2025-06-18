@@ -1,3 +1,4 @@
+// models/Obra.js
 const mongoose = require('mongoose');
 
 const ObraSchema = new mongoose.Schema({
@@ -30,8 +31,8 @@ const ObraSchema = new mongoose.Schema({
     type: String,
   },
   foto: {
-    type: String, // pode ser URL ou base64
-  },
+    type: String, 
+  }, 
 }, {
   timestamps: true,
 });
