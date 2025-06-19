@@ -48,14 +48,16 @@ yarn start
 **Payload exemplo:**
 ```json
 {
-  "nome": "Ponte Rio-Niterói",
-  "responsavel": "Construtora XYZ",
-  "dataInicio": "2023-01-15",
+  "nome": "Edifício Comercial Green Tower",
+  "responsavel": "Construtora ABC Ltda",
+  "dataInicio": "2023-11-20",
+  "dataFim": "2024-12-15",
   "localizacao": {
-    "latitude": -22.9035,
-    "longitude": -43.2096
+    "latitude": -23.5635,
+    "longitude": -46.6523
   },
-  "descricao": "Reforma da ponte Rio-Niterói"
+  "descricao": "Construção de edifício classe A com 30 andares",
+  "foto": "https://exemplo.com/fotos/green-tower.jpg"
 }
 ```
 
