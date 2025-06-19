@@ -1,4 +1,3 @@
-//models/Fiscalizacao.js
 const mongoose = require("mongoose");
 
 const FiscalizacaoSchema = new mongoose.Schema(
@@ -10,6 +9,7 @@ const FiscalizacaoSchema = new mongoose.Schema(
     status: {
       type: String,
       required: true,
+      enum: ["Planejada", "Em andamento", "Concluída", "Cancelada"],
     },
     observacoes: {
       type: String,
@@ -25,7 +25,7 @@ const FiscalizacaoSchema = new mongoose.Schema(
       },
     },
     foto: {
-      type: String, 
+      type: String,
     },
     obra: {
       type: mongoose.Schema.Types.ObjectId,
@@ -35,6 +35,8 @@ const FiscalizacaoSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   }
 );
 
