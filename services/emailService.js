@@ -31,11 +31,11 @@ exports.enviarEmailComFiscalizacoes = async (
     const mailOptions = {
       from: `Sistema de Obras <${process.env.EMAIL_USER}>`,
       to: emailDestino,
-      subject: `Fiscalizações da Obra: ${obraInfo.nome} (ID: ${obraId})`, // ID no assunto
+      subject: `Fiscalizações da Obra: ${obraInfo.nome} (ID: ${obraId})`, 
       html: `
         <h1>Relatório de Fiscalizações</h1>
         <h2>Obra: ${obraInfo.nome}</h2>
-        <p><strong>ID:</strong> ${obraId}</p>
+        <p><strong>ID da Obra:</strong> ${obraId}</p>
         <p><strong>Responsável:</strong> ${obraInfo.responsavel}</p>
         
         <table border="1" cellpadding="5" cellspacing="0">
@@ -52,7 +52,6 @@ exports.enviarEmailComFiscalizacoes = async (
         </table>
         
         <p>Total de fiscalizações: ${fiscalizacoes.length}</p>
-        <p><small>ID da obra: ${obraId}</small></p>
       `,
     };
 
