@@ -83,13 +83,15 @@ Remove uma obra do sistema.
 **Payload exemplo:**
 ```json
 {
-  "data": "2023-06-20",
-  "status": "Planejada",
+  "data": "2023-11-15",
+  "status": "Em andamento",
+  "observacoes": "Fiscalização da fundação da obra",
   "localizacao": {
-    "latitude": -22.9035,
-    "longitude": -43.2096
+    "latitude": -23.5505,
+    "longitude": -46.6333
   },
-  "obra": "507f1f77bcf86cd799439011"
+  "foto": "https://url...", 
+  "obra": "615a1b9e8d8a9b2a1c4b5e1f" 
 }
 ```
 
