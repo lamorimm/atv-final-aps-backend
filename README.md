@@ -140,6 +140,3 @@ Retorna todas as fiscalizações relacionadas a uma obra específica.
 └── services/
     └── emailService.js    # Serviço de envio de emails
 ```
-
-## 📄 Licença
-Este projeto está sob a licença MIT.
